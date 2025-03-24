@@ -29,9 +29,9 @@ Django
 The only prerequisites are to install the requirements, and to make sure you are working from the directory that the app is located in.
 
 
-As the app has already been built, there is no need to run the typical Django commands of running migrations, etc.
+You may need to run the database migrations before running the app. The command to do so is: `python manage.py migrate`.
 
-As such, we will just run the application by using the command `python manage.py runserver`
+Next, we will run the application by using the command `python manage.py runserver`.
 
 Next, we will open up a web browser, and navigate to the address that will be printed in the terminal, the address will be `http://localhost:8000` or `http://127.0.0.1:8000`, both will work, as localhost is an alias for 127.0.0.1.
 

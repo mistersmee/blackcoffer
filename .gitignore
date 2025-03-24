@@ -3,3 +3,4 @@ venv/
 *.json
 *.sqlite3
 __pycache__/
+articles/
