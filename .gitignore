@@ -1,0 +1,5 @@
+*.mp4
+venv/
+*.json
+*.sqlite3
+__pycache__/

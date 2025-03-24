@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+        }
+        .entry {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .entry:last-child {
+            border-bottom: none;
+        }
+        .name {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .email {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Data</h1>
+        <div id="dataContainer">
+            {% if data %}
+                {% for entry in data %}
+                    <div class="entry">
+                        <p class="name">{{ entry.name }}</p>
+                        <p class="email">{{ entry.email }}</p>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No data available.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
