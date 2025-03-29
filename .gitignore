@@ -1,6 +1,7 @@
 *.mp4
 venv/
-*.json
+data.json
 *.sqlite3
 __pycache__/
 articles/
+.env
